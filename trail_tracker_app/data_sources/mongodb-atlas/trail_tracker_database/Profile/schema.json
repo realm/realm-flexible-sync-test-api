@@ -1,0 +1,34 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "done": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "favourites": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "identifierId": {
+            "bsonType": "string"
+        },
+        "wantsToDo": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        }
+    },
+    "required": [
+        "_id",
+        "identifierId"
+    ],
+    "title": "Profile"
+}

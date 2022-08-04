@@ -1,0 +1,76 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "creatorId": {
+            "bsonType": "string"
+        },
+        "distance": {
+            "bsonType": "double"
+        },
+        "elevationDifference": {
+            "bsonType": "double"
+        },
+        "endDate": {
+            "bsonType": "date"
+        },
+        "endPoint": {
+            "bsonType": "object",
+            "properties": {
+                "latitude": {
+                    "bsonType": "double"
+                },
+                "longitude": {
+                    "bsonType": "double"
+                }
+            },
+            "required": [
+                "longitude",
+                "latitude"
+            ],
+            "title": "Location"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "startDate": {
+            "bsonType": "date"
+        },
+        "startPoint": {
+            "bsonType": "object",
+            "properties": {
+                "latitude": {
+                    "bsonType": "double"
+                },
+                "longitude": {
+                    "bsonType": "double"
+                }
+            },
+            "required": [
+                "longitude",
+                "latitude"
+            ],
+            "title": "Location"
+        },
+        "trailType": {
+            "bsonType": "string"
+        },
+        "visibility": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "name",
+        "startDate",
+        "endDate",
+        "elevationDifference",
+        "distance",
+        "visibility",
+        "trailType",
+        "creatorId"
+    ],
+    "title": "Trail"
+}

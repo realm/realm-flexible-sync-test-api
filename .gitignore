@@ -1,0 +1,53 @@
+*~
+.DS_Store
+
+# Merge files
+*.orig
+
+# Binaries
+*.dylib
+*.a
+*.o
+*.d
+*.libdeps
+*.zip
+*.realm.lock
+
+# XCode
+*.bak
+xcuserdata/
+project.xcworkspace
+*.xccheckout
+DerivedData
+/.build
+
+# AppCode
+.idea/
+*.iml
+# backup and crash files
+*.swp
+
+# xcpretty
+build.log
+
+# ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+## Carthage
+# Cartfiles are ignored because they're generated on demand in the installation examples
+Cartfile
+Carthage
+
+## Swiftpm
+.swiftpm
+.build
+Package.resolved

@@ -105,6 +105,16 @@ try realm.write {
 }
 ```
 
+### Update subscription query
+
+A `Results` subscription query can be updated if needed, this will automatically unsubscribe from the former query and subscribe to the new one.
+This method is await-able as well so it waits for the new data from the most recent query to be bootstrapped.
+
+```swift
+var persons = try await realm.objects(Person.self, where: { $0.age >= 18 })
+persons = try await persons.where { $0.age >= 21 }
+```
+
 ### Unsubscribe to a query
 
 Unsubscribe will remove the data from the realm, and remove the subscription from the subscription set.

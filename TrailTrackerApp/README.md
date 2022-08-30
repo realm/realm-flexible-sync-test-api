@@ -2,7 +2,23 @@
 
 This Sample App is intended to showcase a different version of the flexible sync API, for A/B testing purposes.
 
+## Sample App
+
+The sample app showcase three different ways to use the proposed API in a SwiftUI App. 
+
+- You can use `initialSubscriptions` and `rerunOnOpen` to subscribe to a query the first time the realm 
+is opened or on every app startup.
+- You can use the `@ObservedResults` property wrapper to subscribe to a query if the realm configuration 
+for the corresponding property wrapper corresponds to a `flexibleSyncConfiguration()`.
+- You can obtain one or several `QueryResults` using the `realm.subscription.subscribe(:)`, which can be
+used to access data or to unsubscribe to a query subscription. 
+
+To be able to use use this sample app please install your application following the instructions
+[here](https://github.com/realm/realm-flexible-sync-test-api/blob/master/README.md), and copy the app id
+to the sample app.
+
 ## Installation
+You can use SPM to install the version of this API on your App.
 
 ### Swift Package Manager
 
@@ -218,14 +234,3 @@ struct ObservedQueryResultsView: View {
     }
 }
 ```
-
-## Sample App
-
-The sample app showcase three different ways to use the proposed API in a SwiftUI App. 
-
-- You can use `initialSubscriptions` and `rerunOnOpen` to subscribe to a query the first time the realm 
-is opened or on every app startup.
-- You can use the `@ObservedResults` property wrapper to subscribe to a query if the realm configuration 
-for the corresponding property wrapper corresponds to a `flexibleSyncConfiguration()`.
-- You can obtain one or several `QueryResults` using the `realm.subscription.subscribe(:)`, which can be
-used to access data or to unsubscribe to a query subscription. 

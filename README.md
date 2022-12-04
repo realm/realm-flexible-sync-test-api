@@ -1,4 +1,4 @@
-![Realm](https://github.com/realm/realm-dart/raw/master/logo.png)
+![Realm](https://github.com/realm/realm-dart/raw/main/logo.png)
 
 ## Description
 
